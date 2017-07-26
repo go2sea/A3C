@@ -2,8 +2,10 @@
 ### Tensorflow implementation of A3C, both discrete & continuous action space.
 
 ### The a3c.py provides 2 mode of a3c: discrete & continuous.
-    Discrete: The space of actions is limited. I use CartPole-v0 for test.
-    Continuous: The space of actions is unlimited, and the shape of action is usually al list. I use Pendulum-v0 for test.
+    Discrete: 
+        The space of actions is limited. I use CartPole-v0 for test.
+    Continuous: 
+        The space of actions is unlimited, and the shape of action is usually a list. I use Pendulum-v0 for test.
 #### You can change the mode in Config.py
     mode = 'continuous'
     # mode = 'discrete'
