@@ -8,13 +8,13 @@
     mode = 'continuous'
     # mode = 'discrete'
     GAME = 'CartPole-v0' if mode == 'discrete' else 'Pendulum-v0'
-#### Ways to get the action-dimension is different between discrete-mode & continuous-mode:
+#### Ways to get the action-dimension are different between discrete-mode & continuous-mode:
     if mode == 'discrete':  # 注意：离散action的游戏的action_space没有shape属性
         N_A = env.action_space.n
     elif mode == 'continuous':  # 注意：在Pendulum-v0游戏中，action的shape为(1,)，是一个长度为1的列表
         N_A = env.action_space.shape[0]
 #### The result on Pendulum-v0:
-   ![figure_1](/images/Pendulum_result.png)
+![figure_1](/images/Pendulum_result.png)
 
 
 
