@@ -13,6 +13,8 @@
         N_A = env.action_space.n
     elif mode == 'continuous':  # 注意：在Pendulum-v0游戏中，action的shape为(1,)，是一个长度为1的列表
         N_A = env.action_space.shape[0]
+#### The result on Pendulum-v0:
+        ![figure_1](/images/Pendulum_result.png)
 
 
 
