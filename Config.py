@@ -23,9 +23,9 @@ class Config:
     env = gym.make(GAME)
 
     N_S = env.observation_space.shape[0]
-    if mode == 'discrete':  # 注意：离散action的游戏的action_space没有shape属性
+    if mode == 'discrete':  # Note：The action_space of CartPole-v0 does not contain attribute 'shape'
         N_A = env.action_space.n
-    elif mode == 'continuous':  # 注意：在Pendulum-v0游戏中，action的shape为(1,)，是一个长度为1的列表
+    elif mode == 'continuous':  # Note: The action of Pendulum-v0 is a list with shape (1,)
         N_A = env.action_space.shape[0]
         ACTION_BOUND = [env.action_space.low, env.action_space.high]
         ACTION_GAP = env.action_space.high - env.action_space.low
