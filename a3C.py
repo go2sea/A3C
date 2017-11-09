@@ -210,7 +210,7 @@ class Worker(object):
 if __name__ == "__main__":
     SESS = tf.Session()
     unique_config = Config()
-    unique_mutex = threading.Lock()
+    unique_mutex = threading.Lock()  # 仅用在记录GLOBAL_RUNNING_R
     with tf.device("/cpu:0"):
         GLOBAL_AC = ACNet(Config.GLOBAL_NET_SCOPE, unique_config)  # we only need its params
     workers = []
